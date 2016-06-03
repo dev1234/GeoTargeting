@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A571C35FBCE88C71800F1B3 /* libPods-GeoTargeting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 034C46764678ACB5C5E64701 /* libPods-GeoTargeting.a */; };
 		F2AED4B41D01246E0011CDA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AED4B31D01246E0011CDA4 /* AppDelegate.swift */; };
 		F2AED4B61D01246E0011CDA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AED4B51D01246E0011CDA4 /* ViewController.swift */; };
 		F2AED4B91D01246E0011CDA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2AED4B71D01246E0011CDA4 /* Main.storyboard */; };
 		F2AED4BB1D01246E0011CDA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2AED4BA1D01246E0011CDA4 /* Assets.xcassets */; };
 		F2AED4BE1D01246E0011CDA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2AED4BC1D01246E0011CDA4 /* LaunchScreen.storyboard */; };
+		F2AED4CA1D0133640011CDA4 /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = F2AED4C91D0133640011CDA4 /* podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		034C46764678ACB5C5E64701 /* libPods-GeoTargeting.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeoTargeting.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2EEADF04AF665C951B114C /* Pods-GeoTargeting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoTargeting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoTargeting/Pods-GeoTargeting.debug.xcconfig"; sourceTree = "<group>"; };
+		829B4B574E60FC765315D30A /* Pods-GeoTargeting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoTargeting.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoTargeting/Pods-GeoTargeting.release.xcconfig"; sourceTree = "<group>"; };
 		F2AED4B01D01246E0011CDA4 /* GeoTargeting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoTargeting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2AED4B31D01246E0011CDA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2AED4B51D01246E0011CDA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		F2AED4BA1D01246E0011CDA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2AED4BD1D01246E0011CDA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2AED4BF1D01246E0011CDA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2AED4C91D0133640011CDA4 /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = podfile; path = ../podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A571C35FBCE88C71800F1B3 /* libPods-GeoTargeting.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		232DED027F974AC3B1BD38D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				034C46764678ACB5C5E64701 /* libPods-GeoTargeting.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAA719F740F2243027010F28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F2EEADF04AF665C951B114C /* Pods-GeoTargeting.debug.xcconfig */,
+				829B4B574E60FC765315D30A /* Pods-GeoTargeting.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F2AED4A71D01246E0011CDA4 = {
 			isa = PBXGroup;
 			children = (
 				F2AED4B21D01246E0011CDA4 /* GeoTargeting */,
 				F2AED4B11D01246E0011CDA4 /* Products */,
+				DAA719F740F2243027010F28 /* Pods */,
+				232DED027F974AC3B1BD38D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				F2AED4BA1D01246E0011CDA4 /* Assets.xcassets */,
 				F2AED4BC1D01246E0011CDA4 /* LaunchScreen.storyboard */,
 				F2AED4BF1D01246E0011CDA4 /* Info.plist */,
+				F2AED4C91D0133640011CDA4 /* podfile */,
 			);
 			path = GeoTargeting;
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2AED4C21D01246E0011CDA4 /* Build configuration list for PBXNativeTarget "GeoTargeting" */;
 			buildPhases = (
+				DAD8098DF6A55D3925004709 /* [CP] Check Pods Manifest.lock */,
 				F2AED4AC1D01246E0011CDA4 /* Sources */,
 				F2AED4AD1D01246E0011CDA4 /* Frameworks */,
 				F2AED4AE1D01246E0011CDA4 /* Resources */,
+				BC61F0B7CCC3EA56BFFF50E6 /* [CP] Embed Pods Frameworks */,
+				AD6312E9632DE2862E220739 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,11 +155,60 @@
 			files = (
 				F2AED4BE1D01246E0011CDA4 /* LaunchScreen.storyboard in Resources */,
 				F2AED4BB1D01246E0011CDA4 /* Assets.xcassets in Resources */,
+				F2AED4CA1D0133640011CDA4 /* podfile in Resources */,
 				F2AED4B91D01246E0011CDA4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD6312E9632DE2862E220739 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoTargeting/Pods-GeoTargeting-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC61F0B7CCC3EA56BFFF50E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoTargeting/Pods-GeoTargeting-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAD8098DF6A55D3925004709 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F2AED4AC1D01246E0011CDA4 /* Sources */ = {
@@ -248,6 +327,7 @@
 		};
 		F2AED4C31D01246E0011CDA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F2EEADF04AF665C951B114C /* Pods-GeoTargeting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GeoTargeting/Info.plist;
@@ -259,6 +339,7 @@
 		};
 		F2AED4C41D01246E0011CDA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 829B4B574E60FC765315D30A /* Pods-GeoTargeting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GeoTargeting/Info.plist;
@@ -287,6 +368,7 @@
 				F2AED4C41D01246E0011CDA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

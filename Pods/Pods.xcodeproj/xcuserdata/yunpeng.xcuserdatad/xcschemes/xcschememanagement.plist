@@ -4,17 +4,29 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TestTargeting.xcscheme</key>
+		<key>AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
+			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
+		</dict>
+		<key>Pods-GeoTargeting.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>F2AED4AF1D01246E0011CDA4</key>
+		<key>3ADAF9592DBB41985F782AB5B88E430B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
