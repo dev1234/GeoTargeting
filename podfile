@@ -1,5 +1,5 @@
 platform :ios, '8.0'
 
 target ‘GeoTargeting’ do
-  pod 'AFNetworking', '~> 2.6'
+  pod 'AFNetworking', '~> 3.0'
 end

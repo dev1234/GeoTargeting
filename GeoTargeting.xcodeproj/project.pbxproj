@@ -28,6 +28,7 @@
 		F2AED4BD1D01246E0011CDA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2AED4BF1D01246E0011CDA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2AED4C91D0133640011CDA4 /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = podfile; path = ../podfile; sourceTree = "<group>"; };
+		F2FF19401D068E8C0022CBD2 /* GPX file America.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "GPX file America.gpx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 		F2AED4A71D01246E0011CDA4 = {
 			isa = PBXGroup;
 			children = (
+				F2FF19401D068E8C0022CBD2 /* GPX file America.gpx */,
 				F2AED4B21D01246E0011CDA4 /* GeoTargeting */,
 				F2AED4B11D01246E0011CDA4 /* Products */,
 				DAA719F740F2243027010F28 /* Pods */,
@@ -330,10 +332,12 @@
 			baseConfigurationReference = 7F2EEADF04AF665C951B114C /* Pods-GeoTargeting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GeoTargeting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baiyunpeng.GeoTargeting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -342,10 +346,12 @@
 			baseConfigurationReference = 829B4B574E60FC765315D30A /* Pods-GeoTargeting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GeoTargeting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baiyunpeng.GeoTargeting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
