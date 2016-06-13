@@ -62,6 +62,8 @@ class ViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
             locationManager.requestAlwaysAuthorization()
         }
         else if CLLocationManager.authorizationStatus() == .Denied {
+            let alertView = UIAlertView(title: "标题", message: "这个是UIAlertView的默认样式", delegate: self, cancelButtonTitle: "取消")
+            alertView.show()
             //showAlert("Location services were previously denied.");
         }
         else if CLLocationManager.authorizationStatus() == .AuthorizedAlways {
@@ -109,6 +111,8 @@ class ViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
     var monitoredRegions: Dictionary<String, NSDate> = [:]
     // 1. user enter region
     func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        let alertView = UIAlertView(title: "标题", message: "这个是UIAlertView的默认样式", delegate: self, cancelButtonTitle: "取消")
+        alertView.show()
         //showAlert("enter" \(region.identifier)")
         
         // 2.1 Add entrance time
@@ -118,6 +122,8 @@ class ViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
 
     // 2. user exit region
     func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
+        let alertView = UIAlertView(title: "标题", message: "这个是UIAlertView的默认样式", delegate: self, cancelButtonTitle: "取消")
+        alertView.show()
         //showAlert("exit \(region.identifier)")
         
         // 2.2 Remove entrance time
@@ -138,6 +144,8 @@ class ViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
         for regionIdentifier in monitoredRegions.keys {
             //3.
             if NSDate().timeIntervalSinceDate(monitoredRegions[restorationIdentifier!]!) > regionMaxVisiting {
+                let alertView = UIAlertView(title: "标题", message: "这个是UIAlertView的默认样式", delegate: self, cancelButtonTitle: "取消")
+                alertView.show()
                 //showAlert("Thanks for visiting our restaurant")
                 
                 regionsToDelete.append((regionIdentifier))
